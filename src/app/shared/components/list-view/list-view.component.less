@@ -1,0 +1,63 @@
+:host {
+  display: flex;
+  //width: 100%;
+}
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: white;
+
+  .filter-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+
+    div {
+      background-color: orange;
+      padding: 10px 5px;
+    }
+
+    .filter-name {
+      width: 38%;
+    }
+    .filter-genre, .filter-premiere-year {
+      width: 28%;
+    }
+
+    .sort-arrow {
+      display: flex;
+    }
+  }
+
+  .list {
+    .list-header, ::ng-deep app-list-view-item .list-item {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .name-header, .name-item {
+        width: 40%;
+      }
+
+      .season-header, .season-item,
+      .distribution-header, .distribution-item,
+      .premiere-date-header, .premiere-date-item {
+        width: 20%;
+      }
+
+    }
+
+    .list-header {
+      background-color: purple;
+    }
+  }
+
+
+
+}

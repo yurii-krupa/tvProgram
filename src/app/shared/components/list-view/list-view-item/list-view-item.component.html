@@ -1,1 +1,8 @@
-<p>list-view-item works!</p>
+<div class="list-item">
+  <div class="name-item">{{item.title}}
+    <app-badge *ngFor="let badge of item.genre" [badge]="badge"></app-badge>
+  </div>
+  <div class="season-item">{{item.season}}</div>
+  <div class="distribution-item">{{item.distribution}}</div>
+  <div class="premiere-date-item">{{item.premiereDate}}</div>
+</div>

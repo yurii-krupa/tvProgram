@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BadgeComponent } from './shared/components/badge/badge.component';
 import { ListViewComponent } from './shared/components/list-view/list-view.component';
 import { ListViewItemComponent } from './shared/components/list-view/list-view-item/list-view-item.component';
+import { DataLoaderService } from './shared/services/data-loader.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,12 @@ import { ListViewItemComponent } from './shared/components/list-view/list-view-i
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DataLoaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

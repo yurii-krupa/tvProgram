@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {TvSerial} from '../../../models/tv-serial.model';
 
 @Component({
   selector: 'app-list-view-item',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListViewItemComponent implements OnInit {
 
+  @Input() item: TvSerial;
+
   constructor() { }
 
   ngOnInit() {
+    // console.log('inner', this.item);
   }
 
 }

@@ -1,1 +1,34 @@
-<p>list-view works!</p>
+<div class="content">
+
+  <div class="filter-controls">
+    <div class="filter-name">
+    Name
+      <input type="text">
+    </div>
+    <div class="filter-genre">
+    Genre
+      <div class="sort-arrow">
+        <div class="up-arrow">↑</div>
+        <div class="down-arrow">↓</div>
+      </div>
+    </div>
+    <div class="filter-premiere-year">
+      Premiere
+      <div class="sort-arrow">
+        <div class="sort-arrow up-arrow">↑</div>
+        <div class="sort-arrow down-arrow">↓</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list" *ngIf="items.length">
+    <div class="list-header">
+      <div class="name-header">Name</div>
+      <div class="season-header">Season</div>
+      <div class="distribution-header">Network</div>
+      <div class="premiere-date-header">Premiere</div>
+    </div>
+    <app-list-view-item *ngFor="let item of items" [item]="item"></app-list-view-item>
+  </div>
+
+</div>
