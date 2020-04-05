@@ -14,12 +14,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
-
+    //margin-bottom: 10px;
+    //padding: 10px 5px;
+    background-color: gray;
 
     div {
       background-color: orange;
-      padding: 10px 5px;
+      //padding: 10px 5px;
+    }
+    .filter-control {
+      padding: 5px;
     }
 
     .filter-name {
@@ -27,11 +31,17 @@
     }
     .filter-genre, .filter-premiere-year {
       width: 28%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
     }
 
-    .sort-arrow {
-      display: flex;
-    }
+
+  }
+
+  .sort-arrow {
+    display: flex;
+    padding: 0;
   }
 
   .list {
@@ -54,10 +64,55 @@
     }
 
     .list-header {
+      margin-bottom: 10px;
+      padding: 10px 5px;
       background-color: purple;
+    }
+
+    .list-header > * {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
     }
   }
 
+  .pagination-section {
+    color: initial;
+    display: flex;
+    justify-content: center;
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
 
+    .pages {
+      li {
+        padding: 10px 5px 0;
+        margin: 0 10px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        &.active {
+          border-radius: 50%;
+          background-color: orange;
+        }
+      }
+    }
+
+    .limit-selector {
+      position: absolute;
+      right: 5%;
+      margin-top: 10px;
+      li {
+        &.active {
+          background-color: orange;
+        }
+        margin: 0 5px;
+        padding: 5px;
+        //background-color: orange;
+      }
+    }
+  }
 
 }

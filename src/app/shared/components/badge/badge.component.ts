@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BadgeComponent implements OnInit {
 
   @Input() badge: string;
+  @Input() color: string;
   constructor() { }
 
   ngOnInit() {

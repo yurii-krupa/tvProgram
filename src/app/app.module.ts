@@ -17,12 +17,13 @@ import { HttpClientModule } from '@angular/common/http';
     ListViewComponent,
     ListViewItemComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        FormsModule
+    ],
   providers: [
     DataLoaderService
   ],

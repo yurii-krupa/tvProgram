@@ -1,34 +1,78 @@
 <div class="content">
 
   <div class="filter-controls">
-    <div class="filter-name">
+    <div class="filter-control filter-name">
     Name
-      <input type="text">
+      <input #searchInput type="text" (keydown.enter)="search($event, searchInput.value)">
     </div>
-    <div class="filter-genre">
+    <div class="filter-control filter-genre">
     Genre
       <div class="sort-arrow">
         <div class="up-arrow">↑</div>
         <div class="down-arrow">↓</div>
       </div>
     </div>
-    <div class="filter-premiere-year">
+    <div class="filter-control filter-premiere-year">
       Premiere
       <div class="sort-arrow">
-        <div class="sort-arrow up-arrow">↑</div>
-        <div class="sort-arrow down-arrow">↓</div>
+        <div (click)="sortResponse('premiere', 'ascending')" class="sort-arrow up-arrow">↑</div>
+        <div (click)="sortResponse('premiere', 'descenging')" class="sort-arrow down-arrow">↓</div>
       </div>
     </div>
   </div>
 
   <div class="list" *ngIf="items.length">
     <div class="list-header">
-      <div class="name-header">Name</div>
-      <div class="season-header">Season</div>
-      <div class="distribution-header">Network</div>
-      <div class="premiere-date-header">Premiere</div>
+      <div class="name-header">Name
+        <div class="sort-arrow">
+          <div (click)="sort('title', true)" class="sort-arrow up-arrow">↑</div>
+          <div (click)="sort('title', false)" class="sort-arrow down-arrow">↓</div>
+        </div>
+      </div>
+      <div class="season-header">Season
+        <div class="sort-arrow">
+          <div (click)="sort('season', true)" class="sort-arrow up-arrow">↑</div>
+          <div (click)="sort('season', false)" class="sort-arrow down-arrow">↓</div>
+        </div>
+      </div>
+      <div class="distribution-header">Network
+        <div class="sort-arrow">
+          <div (click)="sort('distribution', true)" class="sort-arrow up-arrow">↑</div>
+          <div (click)="sort('distribution', false)" class="sort-arrow down-arrow">↓</div>
+        </div>
+      </div>
+      <div class="premiere-date-header">Premiere
+        <div class="sort-arrow">
+          <div (click)="sort('premiereDate', true)" class="sort-arrow up-arrow">↑</div>
+          <div (click)="sort('premiereDate', false)" class="sort-arrow down-arrow">↓</div>
+        </div>
+      </div>
     </div>
     <app-list-view-item *ngFor="let item of items" [item]="item"></app-list-view-item>
+  </div>
+
+  <div class="pagination-section">
+    <div class="pages">
+      <ul>
+        <li (click)="backBtn()">back</li>
+
+<!--        <li *ngFor="let page of pages; let i = index"-->
+<!--          [class.active]="i === currentPageNumber"-->
+<!--          (click)="gotoPage(page?.pageNumber)">{{page?.pageNumber + 1}}</li>-->
+
+        <li (click)="forwardBtn()">forward</li>
+      </ul>
+    </div>
+    <div class="limit-selector">
+      <ul>
+        <li [class.active]="getActiveLimit(5)"
+        (click)="setItemsLimit(5)">5</li>
+        <li [class.active]="getActiveLimit(10)"
+          (click)="setItemsLimit(10)">10</li>
+        <li [class.active]="getActiveLimit(25)"
+        (click)="setItemsLimit(25)">25</li>
+      </ul>
+    </div>
   </div>
 
 </div>
