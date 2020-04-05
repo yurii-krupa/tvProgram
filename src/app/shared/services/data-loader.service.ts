@@ -28,8 +28,8 @@ export class DataLoaderService {
     return this.http.get<any>(`${this.apiURL}/tvItems`, { params });
   }
 
-  getTvSerialsTotal(): Observable<any> {
-    return this.http.get<any>(`${environment.apiUrl}/tvItems`);
-  }
+  // getTvSerialsTotal(): Observable<any> {
+  //   return this.http.get<any>(`${environment.apiUrl}/tvItems`);
+  // }
 
 }
