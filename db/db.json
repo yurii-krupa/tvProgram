@@ -1,0 +1,211 @@
+{
+  "tvItems": [
+    {
+      "id": 1,
+      "title": "House of cards",
+      "genre": [
+        "serial",
+        "political"
+      ],
+      "cast": [
+        "123efds",
+        "sfdfgdf13"
+      ],
+      "crew": [
+        "name",
+        "name1"
+      ],
+      "premiere_date": "20.10.2019",
+      "ownership": "Paramaount",
+      "distribution": "Netflix"
+    },
+    {
+      "id": 2,
+      "title": "House of cards 2",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "123efds",
+        "sfdfgdf13"
+      ],
+      "crew": [
+        "name",
+        "name1"
+      ],
+      "premiere_date": "20.10.2019",
+      "ownership": "Paramaount",
+      "distribution": "Netflix"
+    },
+    {
+      "id": 3,
+      "title": "House of cards 3",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "123efds",
+        "sfdfgdf13"
+      ],
+      "crew": [
+        "name",
+        "name1"
+      ],
+      "premiere_date": "20.10.2019",
+      "ownership": "Paramaount",
+      "distribution": "Netflix"
+    },
+    {
+      "id": 4,
+      "title": "House of cards 4",
+      "season": 4,
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "123efds",
+        "sfdfgdf13"
+      ],
+      "crew": [
+        "name",
+        "name1"
+      ],
+      "premiere_date": "20.10.2019",
+      "ownership": "Paramaount",
+      "distribution": "Netflix"
+    },
+    {
+      "id": 5,
+      "title": "House of magic",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom Hardy",
+        "Harry Potter"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "premiere_date": "11.05.2019",
+      "ownership": "Paramaount",
+      "distribution": "iTunes"
+    },
+    {
+      "id": 6,
+      "title": "Tom and Jerry",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom",
+        "Jerry",
+        "mice"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2",
+        "mouse 2"
+      ],
+      "premiere_date": "11.05.1987",
+      "ownership": "Paramaount",
+      "distribution": "ICTV"
+    },
+    {
+      "id": 7,
+      "title": "House of magic 7",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom Hardy",
+        "Harry Potter"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "premiere_date": "11.05.2019",
+      "ownership": "Paramaount",
+      "distribution": "iTunes"
+    },
+    {
+      "id": 8,
+      "title": "Tom and Jerry 8",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom",
+        "Jerry",
+        "mice"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2",
+        "mouse 2"
+      ],
+      "premiere_date": "11.05.1987",
+      "ownership": "Paramaount",
+      "distribution": "ICTV"
+    },
+    {
+      "title": "House of cards 5",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "123efds",
+        "sfdfgdf13"
+      ],
+      "crew": [
+        "name",
+        "name1"
+      ],
+      "premiere_date": "20.10.2019",
+      "ownership": "Paramaount",
+      "distribution": "Netflix",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "title": "Tom and Jerry 8",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom",
+        "Jerry",
+        "mice"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2",
+        "mouse 2"
+      ],
+      "premiere_date": "11.05.1987",
+      "ownership": "Paramaount",
+      "distribution": "ICTV"
+    },
+    {
+      "title": "House of magic",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Tom Hardy",
+        "Harry Potter"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "season": 2,
+      "premiere_date": "11.05.2019",
+      "ownership": "Paramaount",
+      "distribution": "iTunes",
+      "id": 11
+    }
+  ]
+}
