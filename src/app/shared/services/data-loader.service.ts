@@ -8,6 +8,8 @@ import { environment } from '../../../environments/environment';
 })
 export class DataLoaderService {
 
+  private apiURL = 'http://localhost:3000';
+
   constructor(
     private http: HttpClient
   ) {  }
@@ -23,8 +25,7 @@ export class DataLoaderService {
     if (searchPhrase) {
       params = params.append('q', searchPhrase);
     }
-    return this.http.get<any>(`${environment.apiUrl}/tvItems`, { params });
-    // return this.http.get<any>(`${environment.apiUrl}/tvItems?_page=${page}&_limit=${limit}`);
+    return this.http.get<any>(`${this.apiURL}/tvItems`, { params });
   }
 
   getTvSerialsTotal(): Observable<any> {
