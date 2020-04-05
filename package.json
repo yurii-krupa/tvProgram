@@ -11,6 +11,10 @@
     "e2e": "ng e2e",
     "start-server": "json-server --watch ./db/db.json"
   },
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.11.3"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.8",
