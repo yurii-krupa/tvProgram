@@ -114,7 +114,7 @@
     },
     {
       "id": 7,
-      "title": "House of magic 7",
+      "title": "House of magic",
       "genre": [
         "serial"
       ],
@@ -189,7 +189,7 @@
       "distribution": "ICTV"
     },
     {
-      "title": "House of magic",
+      "title": "House of magic 2",
       "genre": [
         "serial"
       ],
@@ -206,6 +206,63 @@
       "ownership": "Paramaount",
       "distribution": "iTunes",
       "id": 11
+    },
+    {
+      "title": "Breaking Bad",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Jessy Pinkmen",
+        "Walter White"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "season": 1,
+      "premiere_date": "11.05.2014",
+      "ownership": "AMC",
+      "distribution": "Netflix",
+      "id": 12
+    },
+    {
+      "title": "Breaking Bad",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Jessy Pinkmen",
+        "Walter White"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "season": 2,
+      "premiere_date": "11.05.2015",
+      "ownership": "AMC",
+      "distribution": "Netflix",
+      "id": 13
+    },
+    {
+      "title": "Breaking Bad",
+      "genre": [
+        "serial"
+      ],
+      "cast": [
+        "Jessy Pinkmen",
+        "Walter White"
+      ],
+      "crew": [
+        "Slave 1",
+        "Slave 2"
+      ],
+      "season": 3,
+      "premiere_date": "11.05.2016",
+      "ownership": "AMC",
+      "distribution": "Netflix",
+      "id": 14
     }
   ]
 }

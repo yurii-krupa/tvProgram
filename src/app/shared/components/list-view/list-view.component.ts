@@ -13,7 +13,6 @@ export class ListViewComponent implements OnInit {
   items: TvSerial[] = [];
   activeLimit = 5;
   currentPageNumber = 1;
-  // searchPhrase = '';
 
   constructor(
     private dataLoaderService: DataLoaderService
@@ -21,7 +20,6 @@ export class ListViewComponent implements OnInit {
 
   ngOnInit() {
     this.fetchData(this.activeLimit, this.currentPageNumber);
-    // const temp = this.itemsTotal();
   }
 
   private fetchData(limit?: number, page?: number, searchPhrase?: string): void {
@@ -40,23 +38,11 @@ export class ListViewComponent implements OnInit {
       });
   }
 
-  // get itemsTotal(): number {
-  //   let itemsTotal = 1
-  //   this.dataLoaderService.getTvSerialsTotal().subscribe(response => {
-  //     itemsTotal = +response.length;
-  //   });
-  //   return itemsTotal;
-  // }
-
   backBtn(): void {
-    console.log('back btn');
-    // if (this.currentPageNumber > 0) { this.currentPageNumber--; }
     this.currentPageNumber--;
     this.fetchData(this.activeLimit, this.currentPageNumber);
   }
   forwardBtn(): void {
-    console.log('forward btn');
-    // if (this.currentPageNumber < this.items.length / this.activeLimit) { this.currentPageNumber++; }
     this.currentPageNumber++;
     this.fetchData(this.activeLimit, this.currentPageNumber);
   }
@@ -71,21 +57,6 @@ export class ListViewComponent implements OnInit {
     return this.activeLimit === limit;
   }
 
-  // get pages() {
-  //   // return this.items.length / this.activeLimit;
-  //   const pages = [];
-  //
-  //   for (let i = 0; i < (this.itemsTotal / this.activeLimit); i++) {
-  //     pages.push({pageNumber: i});
-  //   }
-  //   return pages;
-  // }
-
-  gotoPage(pageNumber: number): void {
-    this.currentPageNumber = pageNumber;
-    this.fetchData(this.activeLimit, pageNumber);
-  }
-
   sort(fieldName: string, ascending: boolean = true) {
     this.items.sort((a, b) => {
       if (a[fieldName] < b[fieldName]) {
@@ -96,7 +67,6 @@ export class ListViewComponent implements OnInit {
       }
       return 0;
     });
-    // a[fieldName] < b[fieldName] ? -1 : 1);
   }
 
   sortResponse(fieldName: string, order: string) {
@@ -105,7 +75,6 @@ export class ListViewComponent implements OnInit {
 
   search(event, value) {
     event.stopPropagation();
-    console.log(event, value);
     this.currentPageNumber = 1;
     this.fetchData(this.activeLimit, this.currentPageNumber, value);
   }

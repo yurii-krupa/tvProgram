@@ -13,7 +13,7 @@ export class ListViewItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // console.log('inner', this.item);
+
   }
 
 }
