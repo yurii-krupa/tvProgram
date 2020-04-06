@@ -12,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start:server": "json-server --watch ./db/db.json",
-    "postinstall": "ng build --prod"
+    "postinstall": "ng build --prod --env=${environment}"
   },
   "engines": {
     "node": "10.14.1",
