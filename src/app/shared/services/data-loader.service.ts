@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class DataLoaderService {
 
-  private apiURL = '0.0.0.0:3000';
+  private apiURL = 'http://localhost:3000';
 
   constructor(
     private http: HttpClient
