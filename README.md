@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
+## Starting local workable application
+
+To start you need to start json-server first
+`npm run start:server`
+
+Then you can ran angular app 
+`ng serve`
+
+Or you can use unified command
+`npm run start:full`
+or command for windows os
+`npm run start:full:windows` 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
