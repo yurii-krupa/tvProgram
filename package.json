@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run start:server && node app.js",
+    "start": "node app.js && npm run start:server",
     "start:full": "npm run start:server && ng serve",
     "start:full:windows": "start npm run start:server && start ng serve",
     "build": "ng build",
