@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node app.js && npm run start:server",
+    "start": "npm-run-all --parallel start:prod start:server",
     "start:full": "npm run start:server && ng serve",
     "start:full:windows": "start npm run start:server && start ng serve",
+    "start:prod": "node app.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
